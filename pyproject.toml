@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "home-deferral"
+version = "0.1.0"
+description = ""
+authors = ["Griswald Brooks <griswald.brooks@gmail.com>"]
+readme = "README.md"
+packages = [{include = "home_deferral"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.25.2"
+plotly = "^5.16.0"
+streamlit = "^1.25.0"
+numpy-financial = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+home-deferral = "home_deferral.app:main"
